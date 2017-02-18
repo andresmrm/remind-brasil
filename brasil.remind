@@ -60,8 +60,8 @@ REM Thu [trigger(easterdate($Uy) + 56)] MSG Corpus Christi
 
 # ============== Horário de Verão ===========
 
-# Terceiro domingo de outubro (pelas minhas contas será sempre no dia 15 ou o domingo seguinte.
-REM Sun 15 Oct MSG Início Horário Verão
+# Terceiro domingo de outubro (pelas minhas contas será sempre no dia 15 ou o domingo seguinte).
+REM Sun 15 Oct MSG Início do Horário de Verão
 
-# Terceiro domingo de fevereiro (se for carnaval, o fim será no próximo domingo)
-REM [iif( evaltrig("Sun", easterdate($Uy) - 51) - evaltrig("Sun 15 Feb", date($Uy, 1, 1) ), "Sun 15 Feb", "Sun 22 Feb" )] MSG Fim Horário Verão
+# Terceiro domingo de fevereiro (se for Carnaval, o fim será no próximo domingo).
+REM [iif( evaltrig("Sun", easterdate($Uy) - 51) - evaltrig("Sun 15 Feb", date($Uy, 1, 1) ), "Sun 15 Feb", "Sun 22 Feb" )] MSG Fim do Horário de Verão
