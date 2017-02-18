@@ -13,7 +13,7 @@ REM 12 Oct       MSG N.S. Aparecida
 REM 2 Nov        MSG Finados
 REM 15 Nov       MSG Proclamação da República
 # Morte de Zumbi dos Palmares
-REM 20 Nov	     MSG Consciência Negra [_yr_num(1695)]
+REM 20 Nov       MSG Consciência Negra [_yr_num(1695)]
 REM 25 Dec       MSG Natal
 
 # São Paulo
@@ -35,8 +35,8 @@ REM 20 Jul       MSG Dia da Amizade
 REM 24 Jun       MSG Dia de São João
 REM 29 Jun       MSG Dia de São Pedro
 REM Sun 8 Aug    MSG Dia dos Pais
-REM 15 Oct	     MSG Dia do Professor
-REM 28 Oct	     MSG Dia do Servidor Público
+REM 15 Oct       MSG Dia do Professor
+REM 28 Oct       MSG Dia do Servidor Público
 
 # ============== Páscoa e Dependentes  ==========
 
