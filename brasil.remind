@@ -1,0 +1,67 @@
+# Referência:
+# https://pt.wikipedia.org/wiki/Feriados_no_Brasil
+
+# ============== Feriados =============
+
+# Confraternização Universal
+REM 1 Jan        MSG Ano Novo
+REM 21 Apr       MSG Tiradentes
+REM 1 May        MSG Dia do Trabalhador
+REM 7 Sep        MSG Independência
+# Dia da Criança
+REM 12 Oct       MSG N.S. Aparecida
+REM 2 Nov        MSG Finados
+REM 15 Nov       MSG Proclamação da República
+# Morte de Zumbi dos Palmares
+REM 20 Nov	     MSG Consciência Negra [_yr_num(1695)]
+REM 25 Dec       MSG Natal
+
+# São Paulo
+REM 9 Jul        MSG Revolução Constitucionalista de 1932 [_yr_num(1932)]
+REM 25 Jan       MSG Aniversário da Cidade de São Paulo [_yr_num(1554)]
+
+# ============== Datas Comemorativas ============
+
+REM 6 Jan        MSG Dia de Reis
+REM 8 Mar        MSG Dia da Mulher
+REM 19 Apr       MSG Dia do Índio
+# "Descobrimento" do Brasil
+REM 22 Apr       MSG Chegada de Pedro Alvares Cabral [_yr_num(1500)]
+REM Sun 8 May    MSG Dia das Mães
+REM 13 May       MSG Abolição da Escravatura [_yr_num(1888)]
+REM 5 Jun        MSG Dia Mundial do Meio Ambiente
+REM 12 Jun       MSG Dia dos Namorados
+REM 20 Jul       MSG Dia da Amizade
+REM 24 Jun       MSG Dia de São João
+REM 29 Jun       MSG Dia de São Pedro
+REM Sun 8 Aug    MSG Dia dos Pais
+REM 15 Oct	     MSG Dia do Professor
+REM 28 Oct	     MSG Dia do Servidor Público
+
+# ============== Páscoa e Dependentes  ==========
+
+# REM [trigger(easterdate($Uy) - 51)] MSG Início do Carnaval
+REM [trigger(easterdate($Uy) - 47)] MSG Carnaval
+REM [trigger(easterdate($Uy) - 46)] MSG Quarta-Feira de Cinzas
+# REM [trigger(easterdate($Uy) - 45)] MSG Fim do Carnaval
+
+# Sexta anterior à Páscoa, Paixão de Cristo
+REM [trigger(easterdate($Uy) - 2)] MSG Sexta-Feira Santa
+REM [trigger(easterdate($Uy))] MSG Páscoa
+
+# 50 dias depois da Páscoa
+# REM [trigger(easterdate($Uy) + 50)] MSG Pentecostes
+
+# Domingo seguinte ao Pentecostes (logo 8 semanas depois do domingo de Páscoa)
+# REM [trigger(easterdate($Uy) + 56)] MSG Sta Trindade
+
+# Terça-feira seguinte ao Domingo da Sta Trindade
+REM Thu [trigger(easterdate($Uy) + 56)] MSG Corpus Christi
+
+# ============== Horário de Verão ===========
+
+# Terceiro domingo de outubro (pelas minhas contas será sempre no dia 15 ou o domingo seguinte.
+REM Sun 15 Oct MSG Início Horário Verão
+
+# Terceiro domingo de fevereiro (se for carnaval, o fim será no próximo domingo)
+REM [iif( evaltrig("Sun", easterdate($Uy) - 51) - evaltrig("Sun 15 Feb", date($Uy, 1, 1) ), "Sun 15 Feb", "Sun 22 Feb" )] MSG Fim Horário Verão

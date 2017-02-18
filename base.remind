@@ -1,0 +1,9 @@
+# Número de anos desde um ano inicial
+FSET _yr_num(yr)		"(" + coerce("STRING", YEAR(TRIGDATE()) - yr) + ")"
+
+# ------------ Lua ---------------
+
+REM [trigger(moondate(0))] MSG Lua Nova
+# REM [trigger(moondate(1))] MSG Lua Crescente
+REM [trigger(moondate(2))] MSG Lua Cheia
+# REM [trigger(moondate(3))] MSG Lua Minguante
